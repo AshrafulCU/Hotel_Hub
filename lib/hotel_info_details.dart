@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 class hotel_reservation_details extends StatefulWidget {
-  const hotel_reservation_details({super.key});
+
+  String hotelName, image, description, price;
+
+
+  hotel_reservation_details({super.key, required this.hotelName, required this.image, required this.description, required this.price});
 
   @override
   State<hotel_reservation_details> createState() => _hotel_reservation_detailsState();
@@ -58,7 +62,7 @@ class _hotel_reservation_detailsState extends State<hotel_reservation_details> {
                 color:Color(0xFF30638E),
                 child: Center(
                   child: Text(
-                    widget.placeName, style: GoogleFonts.actor(
+                    widget.hotelName, style: GoogleFonts.actor(
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
                       fontStyle: FontStyle.italic,
