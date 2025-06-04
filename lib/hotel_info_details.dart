@@ -63,7 +63,7 @@ class _hotel_reservation_detailsState extends State<hotel_reservation_details> {
                 child: Center(
                   child: Text(
                     widget.hotelName, style: GoogleFonts.actor(
-                      fontSize: 25,
+                      fontSize: MediaQuery.of(context).size.width * 0.045,
                       fontWeight: FontWeight.bold,
                       fontStyle: FontStyle.italic,
                       color: Colors.white

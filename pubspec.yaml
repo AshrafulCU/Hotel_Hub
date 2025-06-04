@@ -38,6 +38,7 @@ dependencies:
   google_fonts: ^6.2.1
   get: ^4.7.2
   another_carousel_pro: ^1.0.2
+  auto_size_text: ^3.0.0
 
 
 dev_dependencies:
